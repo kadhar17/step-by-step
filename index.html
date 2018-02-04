@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<title>{{title}}</title>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script src="./js/angular.js"></script>
+	<script type="text/javascript" src="./js/app.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<link rel="shortcut icon" href="./images/favicon.png">
+<script type="text/javascript" src="./js/action.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+
+</head>
+<body>
+	<div class="navbart">
+		<h2 class="navtit">id: {{appId}} </h2>
+	</div>
+
+<div class="container">
+	<div id="main"><a href="" class="show_chain" ng-controller="mycontroller"></a>
+<div><h3>Question</h3></div>
+
+
+<div>The diagram shows a solid metal cylinder of diameter 14 cm and height 25 cm. A cuboid of metal with a square end of 6 cm wide and with 25 cm height is hollowed out (i.e. a hole in the shape of a square is formed) as shown. (Take π=22/7)</div>
+<div>
+    <img class="img-responsive" src="./images/question1_img.png"/>
+</div>
+<div>(a) Calculate the volume of the cylinder.</div>
+<div>(b) Calculate the volume of remaining piece of metal after removing the cuboid</div>
+
+<div><h3>Solution</h3></div>
+
+<div>Part (a):</div>
+			<div>Radius of the cylinder	=	14/2<br/><br/>
+			=	7 cm</div>
+			<div>Volume of the cylinder<br/><br/>
+			=	πr2h<br/><br/>
+			=	22/7×7×7×25<br/><br/>
+            =	3850 cm3 </div>
+
+            <div>Part (b):</div>
+			<div>Volume of the cuboid	=	6×6×25<br/><br/>
+            =	900 cm3</div>
+            <div>
+			Volume of the remaining piece of metal<br/><br/>
+			=	Volume of cylinder −
+			Volume of cuboid<br/><br/>
+			=	3850
+			− 900<br/><br/>
+			=	2950 cm3 </div>
+</div>
+
+<div id="banner">
+  
+</div>
+
+
+<div id="outline">
+</div>
+
+<button type="button" id="modelbtn" data-toggle="modal" data-target="#myModal">Question</button>
+<button id="replay">Replay</button>
+<button id="play">Play</button>
+<button id="next">Next</button>
+<button id="prev">Prev</button>
+
+
+		</div>
+
+
+
+
+
+			<!-- <button class="topclickbtn" ng-click="onclicktop">Top</button> -->
+			
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Question:</h4>
+						</div>
+						<div class="modal-body" ng-controller="mycontroller">
+
+						<div>The diagram shows a solid metal cylinder of diameter 14 cm and height 25 cm. A cuboid of metal with a square end of 6 cm wide and with 25 cm height is hollowed out (i.e. a hole in the shape of a square is formed) as shown. (Take π=22/7)</div>
+<div>
+    <img class="img-responsive" src="./images/question1_img.png"/>
+</div>
+<div>(a) Calculate the volume of the cylinder.</div>
+<div>(b) Calculate the volume of remaining piece of metal after removing the cuboid</div>
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+</body>
+
+
+
+</html>
+
+
+  
